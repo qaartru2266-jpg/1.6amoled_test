@@ -7,8 +7,15 @@ sdkconfig.ci
 *.elf
 *.bin
 *.hex
+# 忽略 VSCode/编辑器缓存目录
+.clangd/
 .vscode/
-
+# 忽略编译生成的配置文件备份
+sdkconfig.old
+# 忽略组件锁定文件 (如果你不想锁定版本)
+dependencies.lock
+# 忽略分区表 (如果你想忽略它)
+partitions.csv
 # Python cache
 __pycache__/
 *.py[cod]
